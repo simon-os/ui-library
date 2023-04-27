@@ -1,0 +1,18 @@
+.collapse__toggle {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  transition: background-color .1s ease;
+}
+
+.collapse__toggle:hover {
+  background-color: #eaeaea;
+}
+
+.collapse__content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.collapse__content div {
+  background-color: rgba(247, 255, 251, 0.12);
+  padding: 1rem 1.5rem;
+}

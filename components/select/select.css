@@ -1,0 +1,52 @@
+.select {
+  width: 100%;
+  position: relative;
+  height: max-content;
+}
+
+.select__trigger {
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 101;
+}
+
+.select__option {
+  cursor: pointer;
+}
+
+.select__content {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+
+  display: block;
+  height: max-content;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 102;
+
+  transition: opacity .07s ease,
+              max-height .07s ease,
+              visibility .07s ease;
+}
+
+.select.active .select__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.select.active .select__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+[data-overlay] {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}

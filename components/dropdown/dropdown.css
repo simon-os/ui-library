@@ -1,0 +1,48 @@
+.dropdown {
+  width: 100%;
+  position: relative;
+  height: max-content;
+}
+
+.dropdown__trigger {
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 101;
+}
+
+.dropdown__content {
+  visibility: hidden;
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  overflow: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  transition: opacity .1s ease,
+              max-height .1s ease,
+              visibility .1s ease;
+}
+
+.dropdown__item {
+  cursor: pointer;
+}
+
+.dropdown.active .dropdown__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+[data-overlay] {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}

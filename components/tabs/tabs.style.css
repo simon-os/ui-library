@@ -1,0 +1,21 @@
+.tabs__nav {
+  border-bottom: 2px solid lightgray;
+}
+
+.tabs__nav-item {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  transition: background-color .1s ease;
+}
+
+.tabs__nav-item.active {
+  background-color: #eaeaea;
+}
+
+.tabs__nav-item:hover {
+  background-color: #e5e5e5;
+}
+
+.tabs__content {
+  padding: 1.5rem 1rem;
+}

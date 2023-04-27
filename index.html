@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI Library</title>
+
+    <link rel="stylesheet" href="components/dropdown/dropdown.css">
+    <link rel="stylesheet" href="components/collapse/collapse.css">
+    <link rel="stylesheet" href="components/modal/modal.css">
+    <link rel="stylesheet" href="components/select/select.css">
+    <link rel="stylesheet" href="components/tabs/tabs.css">
+
+    <link rel="stylesheet" href="components/dropdown/dropdown.style.css">
+    <link rel="stylesheet" href="components/collapse/collapse.style.css">
+    <link rel="stylesheet" href="components/select/select.style.css">
+    <link rel="stylesheet" href="components/tabs/tabs.style.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <!----- Components ----->
+    <h2>Components</h2>
+
+    <section>
+        <h3>Select</h3>
+
+        <div class="flex justify-between">
+            <!-- Select -->
+            <div class="select" id="select-1">
+                <input type="text" hidden data-input>
+
+                <div class="select__trigger" data-trigger>
+                    <div data-current>Select some option</div>
+                    <i class="select__icon">></i>
+                </div>
+
+                <div class="select__content" data-content>
+                    <div class="select__option" data-option data-value="1">Option 1</div>
+                    <div class="select__option" data-option data-value="2">Option 2</div>
+                    <div class="select__option" data-option data-value="3">Option 3</div>
+                </div>
+            </div>
+            <!-- /Select -->
+
+            <!-- Select -->
+            <div class="select" id="select-2">
+                <input type="text" hidden data-input>
+
+                <div class="select__trigger" data-trigger>
+                    <div data-current>Select some option</div>
+                    <i class="select__icon">></i>
+                </div>
+
+                <div class="select__content" data-content>
+                    <div class="select__option" data-option data-value="1">Option 1</div>
+                    <div class="select__option" data-option data-value="2">Option 2</div>
+                    <div class="select__option" data-option data-value="3" data-default>Option 3</div>
+                </div>
+            </div>
+            <!-- /Select -->
+        </div>
+
+    </section>
+
+    <section>
+        <h3>Modal</h3>
+
+        <div class="modal" id="modal">
+            <div class="flex justify-between">
+                Modal Heading 1
+                <button data-close>x</button>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-2">
+            <div class="flex justify-between">
+                Modal Heading 2
+                <button data-close>x</button>
+            </div>
+        </div>
+
+        <button class="modal-1-triggers">Open modal 1</button>
+        <button class="modal-1-triggers">Open modal 1</button>
+        <a id="modal-2-trigger" href="#">Open modal 2</a>
+    </section>
+
+    <section>
+        <h3>Dropdown</h3>
+
+        <div class="flex">
+            <!-- Dropdown -->
+            <div class="dropdown" id="dropdown-1">
+                <button class="dropdown__trigger" data-trigger>
+                    Menu <i class="dropdown__icon">+</i>
+                </button>
+
+                <div class="dropdown__content" data-content>
+                    <a class="dropdown__item" data-option>Menu Item 1</a>
+                    <a class="dropdown__item" data-option>Menu Item 2</a>
+                    <a class="dropdown__item" data-option>Menu Item 3</a>
+                </div>
+            </div>
+            <!-- /Dropdown -->
+
+            <!-- Dropdown -->
+            <div class="dropdown" id="dropdown-2">
+                <button class="dropdown__trigger" data-trigger>
+                    Menu <i class="dropdown__icon">+</i>
+                </button>
+
+                <div class="dropdown__content" data-content>
+                    <a class="dropdown__item" data-option>Menu Item 1</a>
+                    <a class="dropdown__item" data-option>Menu Item 2</a>
+                    <a class="dropdown__item" data-option>Menu Item 3</a>
+                </div>
+            </div>
+            <!-- /Dropdown -->
+        </div>
+    </section>
+
+    <section>
+        <h3>Collapse</h3>
+
+        <!-- Collapse -->
+        <div id="collapse-group">
+            <div class="collapse" data-collapse data-default>
+                <div class="collapse__toggle" data-toggle>
+                    Toggle
+                </div>
+
+                <div class="collapse__content" data-content>
+                    <div>
+                        Content 1
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" data-collapse>
+                <div class="collapse__toggle" data-toggle>
+                    Toggle
+                </div>
+
+                <div class="collapse__content" data-content>
+                    <div>
+                        Content 2
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" data-collapse>
+                <div class="collapse__toggle" data-toggle>
+                    Toggle
+                </div>
+
+                <div class="collapse__content" data-content>
+                    <div>
+                        Content 3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Collapse -->
+    </section>
+
+    <section>
+        <h3>Accordion</h3>
+
+        <!-- Accordion -->
+        <div id="accordion">
+            <div class="collapse" data-collapse data-default>
+                <div class="collapse__toggle" data-toggle>
+                    Accordion Toggle
+                </div>
+
+                <div class="collapse__content" data-content>
+                    <div>
+                        Accordion Content 1
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" data-collapse>
+                <div class="collapse__toggle" data-toggle>
+                    Accordion Toggle
+                </div>
+
+                <div class="collapse__content" data-content>
+                    <div>
+                        Accordion Content 2
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" data-collapse>
+                <div class="collapse__toggle" data-toggle>
+                    Accordion Toggle
+                </div>
+
+                <div class="collapse__content" data-content>
+                    <div>
+                        Accordion Content 3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Accordion -->
+    </section>
+
+    <section>
+        <h3>Tabs</h3>
+
+        <div class="tabs" id="tabs-1">
+            <div class="tabs__nav" data-nav>
+                <a class="tabs__nav-item" href="#" data-nav-to=".tabs__pane">Tab 1</a>
+                <button class="tabs__nav-item" data-nav-to="#tab-pane-2">Tab 2</button>
+                <div class="tabs__nav-item" data-nav-to=".tabs__pane:last-child">Tab 3</div>
+            </div>
+
+            <div class="tabs__content">
+                <div class="tabs__pane">
+                    Tab content 1
+                </div>
+                <div class="tabs__pane" id="tab-pane-2">
+                    Tab content 2
+                </div>
+                <div class="tabs__pane">
+                    <div class="pl-1">
+                        <pre>Inner tabs:</pre>
+
+                        <div class="tabs" id="tabs-inner">
+                            <div class="tabs__nav" data-nav>
+                                <a class="tabs__nav-item" href="#" data-nav-to="#tabs-inner .tabs__pane">Tab 1</a>
+                                <button class="tabs__nav-item" data-nav-to="#tabs-inner .tabs__pane:nth-child(2)">Tab 2</button>
+                                <div class="tabs__nav-item" data-nav-to="#tabs-inner .tabs__pane:last-child">Tab 3</div>
+                            </div>
+
+                            <div class="tabs__content">
+                                <div class="tabs__pane">Tab content 1</div>
+                                <div class="tabs__pane">Tab content 2</div>
+                                <div class="tabs__pane">Tab content 3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="tabs" id="tabs-2">
+            <div class="tabs__nav" data-nav>
+                <a class="tabs__nav-item" href="#" data-nav-to=".tabs__pane">Tab 1</a>
+                <button class="tabs__nav-item" data-nav-to=".tabs__pane:nth-child(2)">Tab 2</button>
+                <div class="tabs__nav-item active" data-nav-to=".tabs__pane:last-child">Tab 3</div>
+            </div>
+
+            <div class="tabs__content">
+                <div class="tabs__pane">
+                    Tab content 1
+                </div>
+                <div class="tabs__pane">
+                    Tab content 2
+                </div>
+                <div class="tabs__pane">
+                    Tab content 3
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----- /Components ----->
+
+    <span id="parallax-trigger"></span>
+
+    <!-- Anchor scrolling -->
+    <section>
+        <h4>Anchor scrolling</h4>
+
+        <a href="#anchor-demo">
+            Scroll to element
+        </a>
+
+        <br><br>
+
+        <button class="scroll-button" data-target="#anchor-demo">
+            Scroll to element custom
+        </button>
+    </section>
+    <!-- /Anchor scrolling -->
+
+    <!-- Parallax -->
+    <section>
+        <h4>Parallax</h4>
+        <br><br><br>
+
+        <div class="flex gap-3">
+            <div
+                data-parallax
+                data-y="-5rem"
+                data-start="30% bottom"
+                data-media="min-width: 575px"
+            >
+                Parallaxed element
+            </div>
+
+            <div
+                data-parallax
+                data-y="-2rem"
+                data-x="0.1rem"
+                data-trigger="#parallax-trigger"
+                data-media="min-width: 1000px"
+            >
+                Parallaxed element 2
+            </div>
+        </div>
+    </section>
+    <!-- /Parallax -->
+
+    <span id="anchor-demo"></span>
+
+    <!----- GSAP Animation Kit ----->
+    <section>
+        <h2>GSAP Animation Kit</h2>
+
+        <div class="flex flex-column gap-12">
+            <div class="element align-start" data-fade-in>
+                data-fade-in
+            </div>
+
+            <div class="element align-end" data-fade-up>
+                data-fade-up
+            </div>
+
+            <div class="element align-start" data-fade-down>
+                data-fade-down
+            </div>
+
+            <div class="element align-end" data-fade-right>
+                data-fade-right
+            </div>
+
+            <div class="element align-start" data-fade-left>
+                data-fade-left
+            </div>
+
+            <div class="element align-end" data-flip-side>
+                data-flip-side
+            </div>
+
+            <div class="element align-start" data-flip-top>
+                data-flip-top
+            </div>
+
+            <div class="element align-end" data-zoom>
+                data-zoom
+            </div>
+
+            <div data-stagger-container>
+                <h4>Stagger</h4>
+                <div class="flex gap-3">
+                    <div class="element" data-stagger>1</div>
+                    <div class="element" data-stagger>2</div>
+                    <div class="element" data-stagger>3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-text-fade-in>
+        <h4>Some text section</h4>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Assumenda blanditiis commodi cumque deleniti
+                distinctio est ex, impedit magni nesciunt, </p>
+            <p>non odio officia praesentium quasi quia quisquam quod, sit velit
+                voluptates.</p>
+        </div>
+        <ul>
+            <li>Lorem ipsum</li>
+            <li>dolor sit amet</li>
+            <li>consectetur adipisicing elit</li>
+        </ul>
+
+        <button>Button</button>
+    </section>
+
+    <section>
+        <br><br>
+        <h2 class="wrapped-text">Some wrapped text to animate</h2>
+    </section>
+    <!----- /GSAP Animation Kit ----->
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="index.js"></script>
+</body>
+</html>

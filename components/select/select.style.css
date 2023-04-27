@@ -1,0 +1,45 @@
+.select {
+  max-width: 300px;
+}
+
+.select__trigger {
+  display: flex;
+  border: none;
+  padding: 0.65rem 2rem 0.65rem 1rem;
+  background-color: #f5f5f5;
+  transition: background-color .1s ease;
+}
+
+.select__trigger:hover {
+  background-color: #eaeaea;
+}
+
+.select.active .select__icon {
+  transform: rotate(270deg);
+}
+
+.select__icon {
+  font-size: 0.85rem;
+  position: absolute;
+  right: 1rem;
+  font-style: normal;
+  transform-origin: center center;
+  transition: transform .07s ease;
+  transform: rotate(90deg);
+}
+
+.select__content {
+  padding: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 5px 7px 0 #00000012;
+}
+
+.select__option {
+  padding: .5rem 1rem;
+}
+
+.select__option:hover {
+  background-color: #f5f5f5;
+}

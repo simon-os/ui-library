@@ -1,4 +1,4 @@
-##Components:
+## Components:
 Additional info for each component can be found in JSDoc, at the beginning of the <br />
 corresponding file, or by hovering the mouse over the function call. 
 
@@ -8,11 +8,11 @@ corresponding file, or by hovering the mouse over the function call.
 **onOpen**(instance, target) <br />
 **onClose**(instance, target) <br />
 
-###Specific events:
+### Specific events:
 Select: **onSelect**(instance, target) <br />
 Tabs: **onSwitch**(instance, target)
 
-##Animations
+## Animations
 If parameters are not specified in options, these defaults will be used: <br />
 
 **duration**: 1 <br />
